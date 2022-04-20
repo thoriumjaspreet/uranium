@@ -13,9 +13,12 @@ const basicCode= async function(req, res) {
     }
 
 
+const middleware=async function(req,res){
+    
+res.send({msg:" This is my first middleware" })
+}
 
-
-
+module.exports.middleware=middleware
 
 
 
